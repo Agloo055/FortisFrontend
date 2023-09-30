@@ -99,6 +99,7 @@ function App() {
     }
 
     useEffect(() => {
+        console.log(collectionURL)
         getCollections()
     }, [])
 
