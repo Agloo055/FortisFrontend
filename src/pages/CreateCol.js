@@ -23,9 +23,9 @@ const CreateCol = (props) => {
         
     }
     // DEBUG: Added to see the data as its being updated
-    useEffect(()=>{
-        console.log(form)
-    })
+    // useEffect(()=>{
+    //     console.log(form)
+    // })
 
     // handle submitt for this form
     const handleSubmit = (e) => {
