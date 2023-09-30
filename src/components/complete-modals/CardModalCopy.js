@@ -20,7 +20,7 @@ function CardModalCopy (props) {
 
   const getCard = async () => {
     try { 
-      console.log('hi');
+      //console.log('hi');
       const card = await fetch(`${setsURL}/${props.setId}/${props.localId}`);
       if (card) {
         if (!card.ok) {
@@ -33,7 +33,7 @@ function CardModalCopy (props) {
         setLoading(false); // Set loading to false once data is fetched
       }
     } catch (error) {
-      console.log( 'line 37 @ carouselimage.js', error);
+      //console.log( 'line 37 @ carouselimage.js', error);
       setError(error);
       setLoading(false); // Set loading to false on error
     }
@@ -131,13 +131,13 @@ function CardModalCopy (props) {
 
   // Render loading state
   const renderLoading = () => {
-    console.log('render loading: line 81');
+    //console.log('render loading: line 81');
     return <h1>Loading...</h1>;
   }
 
   // Render error state
   const renderError = () => {
-    console.log("render error: line 87");
+    //console.log("render error: line 87");
     return <p>Error: {error.message}</p>;
   }
 
@@ -145,7 +145,7 @@ function CardModalCopy (props) {
   if (loading) {
     return renderLoading();
   } else if (error) {
-    console.log(error, "cardmodal.js");
+    //console.log(error, "cardmodal.js");
     return renderError();
   } else {
     return loaded();

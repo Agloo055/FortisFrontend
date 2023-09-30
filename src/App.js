@@ -13,7 +13,7 @@ import EditCol from "./pages/EditCol"
 import './styles.css'
 
 function App() {
-    console.log('online') // Console log 
+    //console.log('online') // Console log 
     const [collections, setCollections] = useState(null)
     const [pokeCards, setPokeCards] = useState(null)
 
@@ -99,7 +99,7 @@ function App() {
     }
 
     useEffect(() => {
-        console.log(collectionURL)
+        //console.log(collectionURL)
         getCollections()
     }, [])
 

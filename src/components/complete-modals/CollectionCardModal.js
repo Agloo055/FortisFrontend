@@ -91,20 +91,20 @@ function CollectionCardModal ({card, show, onHide, deletePokeCard}) {
         </Modal>
       );
     } else {
-      console.log('No CMC Card');
+      //console.log('No CMC Card');
       return null; // Or display a loading message or handle the case when card is null
     }
   };
 
   // Render loading state
   const renderLoading = () => {
-    console.log('render loading: line 81');
+    //console.log('render loading: line 81');
     return <h1>Loading...</h1>;
   }
 
   // Render error state
   const renderError = () => {
-    console.log("render error: line 87");
+    //console.log("render error: line 87");
     return <p>Error: {error.message}</p>;
   }
 
@@ -112,7 +112,7 @@ function CollectionCardModal ({card, show, onHide, deletePokeCard}) {
   if (loading) {
     return renderLoading();
   } else if (error) {
-    console.log("cardmodal.js", error);
+    //console.log("cardmodal.js", error);
     return renderError();
   } else {
     // console.log('card modal loaded');

@@ -33,18 +33,11 @@ const ShowSearch = (props) => {
     const [cardEl, setCardEl] = useState(null)// contains the information pulled from the Pokemon API 
     const [displayState, setDisplay] = useState(0) // Contains information on what is being displayed false means the sets are displayed, true means the cars in the set are displayed
 
-    // fetchs the set data
-    const someData = {
-        stuff: 1
-    }    
+       
     const getSets = async () =>{
         console.log("Inside 0")
         const response = await fetch(setsurl)
         const data = await response.json()
-        // Console Log to make sure the data from the API is coming through
-        //console.log(`This is the Data`)
-        //console.log(data)
-        //console.log(data[0].name)
         setCardEl(data)  
     }
     const getCards = async () => {

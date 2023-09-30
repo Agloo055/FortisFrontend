@@ -19,7 +19,7 @@ const CollectionDisplayInfo = ({col, deletePokeCard, deleteCollection}) => {
     useEffect(()=>{
         setData()
     })
-    console.log('toDisplay line at CDI: ', toDisplay)
+    //console.log('toDisplay line at CDI: ', toDisplay)
 
     const handleDeletion = (e) => {
         e.preventDefault()

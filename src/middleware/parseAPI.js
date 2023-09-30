@@ -91,5 +91,5 @@ const test = async () => {
     const response = await fetch(api)
     const data = response.json
     const parsedData = parseAPI(data)
-    console.log(data)
+    //console.log(data)
 }

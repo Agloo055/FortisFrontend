@@ -88,13 +88,13 @@ function CardModal (props) {
 
   // Render loading state
   const renderLoading = () => {
-    console.log('render loading: line 81');
+    //console.log('render loading: line 81');
     return <h1>Loading...</h1>;
   }
 
   // Render error state
   const renderError = () => {
-    console.log("render error: line 87");
+    //console.log("render error: line 87");
     return <p>Error: {error.message}</p>;
   }
 
@@ -102,7 +102,7 @@ function CardModal (props) {
   if (loading) {
     return renderLoading();
   } else if (error) {
-    console.log(error, "cardmodal.js");
+    //console.log(error, "cardmodal.js");
     return renderError();
   } else {
     return loaded();

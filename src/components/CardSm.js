@@ -10,7 +10,6 @@ const CardSm = ({name, image}) => {
                 <p>{name}</p>
         </Card>
     )
-    //const image = logo +'.png' // adds the .png to the end of the path for the logo
-    //console.log(image)
+    
 }
 export default CardSm

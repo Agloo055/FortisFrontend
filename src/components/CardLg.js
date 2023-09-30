@@ -72,8 +72,8 @@ function CardLg (props) {
     }
 
     const handleSubmit = (e) => {
-        console.log(collectionId)
-        console.log(form)
+        //console.log(collectionId)
+        //console.log(form)
         setForm({cardData:cardData})
         e.preventDefault()
         props.createPokeCard(collectionId, form)

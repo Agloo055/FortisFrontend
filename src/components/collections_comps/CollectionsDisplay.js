@@ -25,7 +25,7 @@ const CollectionsDisplay = (props) => {
     }
 
     const Loaded = () =>{
-        console.log(collections)
+        //console.log(collections)
        
         const displayCollections = props.collections.map((ele, index) => {
             return(

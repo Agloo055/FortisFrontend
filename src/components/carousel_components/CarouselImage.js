@@ -52,7 +52,7 @@ const CarouselImage = (props) => {
   const handleImageClick = () => {
     // await getCard()
     setModalShow(true)
-    console.log( "card data line 59 @ carouselImage", cardData);
+    //console.log( "card data line 59 @ carouselImage", cardData);
 
   }
 
